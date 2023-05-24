@@ -40,10 +40,12 @@ class CreateTableSales extends AbstractMigration
             ->addColumn('quantitaty', 'float')
             ->addForeignKey('product_id', 'products', 'id')
             ->addForeignKey('buyer_user_id', 'users', 'id')
-            ->addTimestamps();
+            ->addTimestamps()
+            ->save();
     }
 
     public function down()
     {
+        $this->dropDatabase('sales');
     }
 }

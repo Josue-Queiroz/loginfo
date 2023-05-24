@@ -52,10 +52,12 @@ custom styles.
 
 
 ## Case run Docker:
-- Rum
+- alter your file app_local 'host' => 'host.docker.internal',
+
+- #Rum terminal
 - $ docker-compose up --build -d
 
-- Access at Container:
+- #Access at Container:
 - $ docker exec -it App /bin/bash
 - bash$ composer install
 
