@@ -16,10 +16,10 @@ environments:
 
     development:
         adapter: mysql
-        host: localhost
-        name: development_db
+        host: host.docker.internal
+        name: loginfo_app
         user: root
-        pass: ''
+        pass: 'root'
         port: 3306
         charset: utf8
 
